@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>
+    <%- title %>
+  </title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="d-md-none px-2 py-2">
+    <div class="d-flex justify-content-end">
+        <input id="nav-toggle" class="ham-toggle" type="checkbox">
+        <label for="nav-toggle" class="ham-menu">
+          <div class="ham-frame">
+            <div class="ham-bar ham-bar--top"></div>
+            <div class="ham-bar ham-bar--middle"></div>
+            <div class="ham-bar ham-bar--bottom"></div>
+          </div>
+        </label>
+        <nav class="header-nav">
+            <ul class="list-menu">
+              <li class="list-menu-item">
+                <a class="list-menu-item-link" href="#">Dashboard</a>
+              </li>
+              <li class="list-menu-item">
+                <a class="list-menu-item-link" href="#">Question</a>
+              </li>
+              <li class="list-menu-item">
+                <a class="list-menu-item-link" href="#">Assignment</a>
+              </li>
+              <li class="list-menu-item">
+                <a class="list-menu-item-link" href="#">Course</a>
+              </li>
+              <li class="list-menu-item">
+                <a class="list-menu-item-link" href="#">Admin</a>
+              </li>
+              <li class="list-menu-item">
+                <a class="list-menu-item-link" href="#">Settings</a>
+              </li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+  <aside class="d-none d-md-flex flex-column justify-content-between">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a href="./index.html" title="ANSWER">
+          <img class="flex-column" src="./assets/image/logo-ANSWER.svg" alt="logo-ANSWER">
+        </a>
+      </li>
+      <li class="nav-item">
+        <h2>
+          <a class="nav-link text-dark link-success  d-flex align-items-center" href="#">
+            <span class="material-icons me-3">assessment</span>
+            Dashboard
+          </a>
+        </h2>
+      </li>
+      <li class="nav-item">
+        <h2>
+          <a class="nav-link text-dark link-success d-flex align-items-center" href="#">
+            <span class="material-icons me-3">forum</span>
+            Question
+          </a>
+        </h2>
+      </li>
+      <li class="nav-item">
+        <h2>
+          <a class="nav-link text-dark link-success d-flex align-items-center" href="./index.html">
+            <span class="material-icons me-3">assignment</span>
+            Assignment
+          </a>
+        </h2>
+      </li>
+      <li class="nav-item">
+        <h2>
+          <a class="nav-link text-dark link-success d-flex align-items-center" href="#">
+            <span class="material-icons me-3">video_library</span>
+            Course
+          </a>
+        </h2>
+      </li>
+      <li class="nav-item">
+        <h2>
+          <a class="nav-link text-dark link-success d-flex align-items-center" href="#">
+            <span class="material-icons me-3">people_alt</span>
+            Admin
+          </a>
+        </h2>
+      </li>
+      <li class="nav-item">
+        <h2>
+          <a class="nav-link text-dark link-success d-flex align-items-center" href="#">
+            <span class="material-icons me-3">settings</span>
+            Settings
+          </a>
+        </h2>
+      </li>
+    </ul>
+
+    <div class="aside-footer d-flex gap-3">
+      <img class="footer-img" src="./assets/image/andychen.jpeg" alt=Andy-Chen"">
+      <div class="text">
+        <h2>Andy Chen</h2>
+        <div class="h3">andy0401@mail.com</div>
+      </div>
+    </div>
+  </aside>
+
+  <%- contents %>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

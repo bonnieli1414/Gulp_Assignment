@@ -1,0 +1,162 @@
+---
+title: Assignment
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<main>
+    <div class="container">
+        <div class="container-header">
+            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex">
+                <h1 class="pr-50">Assignment</h1>
+                <select name="" id="">
+                    <option value=""><h2>All Courses</h2></option>
+                </select>
+            </div>
+            <div class="d-flex align-items-center">
+                <a href=""><span role="button" class="material-icons me-4">search</span></a>
+                <a href=""><span role="button" class="material-icons">notifications_active</span></a>
+            </div> 
+            </div>
+            <div class="d-flex justify-content-between align-items-center px-40-8">
+                <select name="" id="">
+                    <option value="All"><h2>All (4)</h2></option>
+                </select>
+                <p class="text-secondary">2 comments</p>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between gap-3">
+            <div class="aside">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between pxy-12">  
+                        <div class="d-flex flex-column">
+                            <p>Chapter Assignment 2</p>
+                            <h2>Please check this file…</h2>
+                        </div>
+                        <div class="d-flex flex-column align-items-end">
+                            <p>4 hrs ago</p>
+                            <p class="text-secondary">Emily Wang</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between pxy-12">
+                        <div class="d-flex flex-column">
+                            <p>Chapter Assignment 1</p>
+                            <h2>My Homework</h2>
+                        </div>
+                        <div class="d-flex flex-column align-items-end">
+                            <p>12 hrs ago</p>
+                            <p class="text-secondary">David Xu</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between pxy-12">
+                        <div class="d-flex flex-column">
+                            <p>Final Assignment</p>
+                            <h2>Have a problem with this…</h2>
+                        </div>
+                        <div class="d-flex flex-column align-items-end">
+                            <p>18 hrs ago</p>
+                            <p class="text-secondary">Tony Wei</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between pxy-12">
+                        <div class="d-flex flex-column">
+                            <p>Final Assignment</p>
+                            <h2>Did I do it right?</h2>
+                        </div>
+                        <div class="d-flex flex-column align-items-end">
+                            <p>19 hrs ago</p>
+                            <p class="text-secondary">Christina Lin</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center pt-12">
+                        <nav aria-label="breadcrumb d-flex justify-content-between">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="#">Chapter Assignment 2</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">HTML&CSS</li>
+                            </ol>
+                            <h2>Please check this file for me, thanks!</h2>
+                        </nav>
+                        <a href="#">
+                            <span class="material-icons">more_vert</span>
+                        </a>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item py-3 pr-32 border-bottom-0">
+                        <div class="d-flex gap-2">
+                            <img class="people-img" src="./assets/image/emilywang.jpeg" alt="Emily-Wang">
+                            <div class="max-width-488 pb-16 bd-bottom">
+                                <h2>Emily Wang</h2>
+                                <p class="text-secondary">10:38 AM (4 hours ago)</p>
+                                <div class="h4 py-3">
+                                    Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="text-success">div</span> is bigger than the height of the <span class="text-success">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br> 
+                                    What is the gap or extra space below image?
+                                </div>
+                                <a href="#" class="btn btn-light border py-12 px-3">
+                                    <div class="d-flex align-items-center">
+                                      <span class="material-icons me-2"> attach_file</span>
+                                      <h2>HW-2-David.zip</h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item py-3 pr-32">
+                        <div class="d-flex gap-2">
+                            <img class="people-img" src="./assets/image/andychen.jpeg" alt="Andy-Chen">
+                            <div class="max-width-488">
+                                <div class="d-flex justify-content-between">
+                                    <div class="block">
+                                        <h2>Andy Chen (You)</h2>
+                                        <p class="text-secondary">13:24 AM (1 hours ago)</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <a href="#"><span role="button" class="material-icons-outlined me-4">star_border</span></a>
+                                        <a href="#"><span role="button" class="material-icons">edit</span></a>
+                                    </div>
+                                </div>
+                                <div class="h4 py-3">
+                                    Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br>
+                                    <br>
+                                    <br> 
+                                    You can:<br>
+                                    <br>
+                                    <br>
+                                    • adjust the <span class="text-success">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="text-success">middle</span> ) or<br> 　
+                                    • change the <span class="text-success">display</span> so it isn’t inline.
+                                </div>
+                            </div>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+                <div class="card-footer mt-16">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination g-23">
+                              <li class="page-item">
+                                <a href="#"><span role="button" class="material-icons fw-bold">keyboard_arrow_left</span></a>
+                                </a>
+                              </li>
+                              <li class="page-item">
+                                <a href="#"><span role="button" class="material-icons fw-bold">keyboard_arrow_right</span>
+                                </a>
+                              </li>
+                            </ul>
+                        </nav>
+                        <div class="d-flex gap-3 mt-8 mb-32">
+                            <div class="btn btn-outline-success">Mark as read</div>
+                            <div class="btn btn-success">Reply</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
